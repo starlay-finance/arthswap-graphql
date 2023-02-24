@@ -1,0 +1,32 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "codegen": "rm -rf src/contracts/ && typechain --target ethers-v5 --out-dir src/contracts/ 'abi/*.json'"
+  },
+  "dependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@types/node": "18.14.1",
+    "bignumber.js": "^9.1.1",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.2.1",
+    "ethers": "^5.7.2",
+    "graphql": "^16.6.0",
+    "graphql-yoga": "^3.7.0",
+    "next": "13.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typechain": "^8.1.1",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.28"
+  }
+}
