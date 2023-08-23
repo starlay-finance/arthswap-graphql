@@ -1,4 +1,4 @@
-export const RPC_URL = 'https://astar.api.onfinality.io/public'
+export const RPC_URL = 'https://astar.blastapi.io/e34f6e3c-1b8a-4e14-9462-5b8de8be65d7'
 
 export const FACTORY_ADDRESS = '0xA9473608514457b4bF083f9045fA63ae5810A03E'
 
