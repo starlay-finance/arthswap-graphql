@@ -6,7 +6,6 @@ import {
   DIA_ORACLE_V2_ADDRESS,
   FACTORY_ADDRESS,
   MULTICALL_ADDRESS,
-  RPC_URL,
 } from 'src/constants'
 import {
   IPancakeFactory,
@@ -24,6 +23,7 @@ import { IERC20, IERC20Interface } from 'src/contracts/IERC20'
 import { toBigNumberJs } from 'src/utils/bignumberJs'
 import { IPriceService, Price } from '../types'
 import { multicallChunked, toCall } from './utils'
+import { RPC_URL } from 'src/utils/env'
 
 export class PriceServiceRPC implements IPriceService {
   private constructor(
