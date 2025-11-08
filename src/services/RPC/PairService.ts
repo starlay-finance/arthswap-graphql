@@ -1,5 +1,5 @@
 import { JsonRpcProvider } from '@ethersproject/providers'
-import { FACTORY_ADDRESS, MULTICALL_ADDRESS, RPC_URL } from 'src/constants'
+import { FACTORY_ADDRESS, MULTICALL_ADDRESS } from 'src/constants'
 import {
   IPancakeFactory,
   IPancakeFactory__factory,
@@ -13,6 +13,7 @@ import { IERC20, IERC20Interface } from 'src/contracts/IERC20'
 import { IPancakePairInterface } from 'src/contracts/IPancakePair'
 import { IPairService, Token } from '../types'
 import { multicallChunked, toCall } from './utils'
+import { RPC_URL } from 'src/utils/env'
 
 export class PairServiceRPC implements IPairService {
   private constructor(
